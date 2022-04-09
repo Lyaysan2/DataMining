@@ -54,8 +54,13 @@ for item in words:
 
 # print(*bloom_filter.bloom_filter)
 
-print(bloom_filter.check("фильтр"))  # false
-bloom_filter.add_to_filter("фильтр")
-print(bloom_filter.check("фильтр"))  # true
-bloom_filter.delete_from_filter("фильтр")
-print(bloom_filter.check("фильтр"))  # false
+another_word = ['bluff', 'cheater', 'hate','war','humanity', 'racism','hurt','nuke','gloomy','facebook', 'geeksforgeeks','twitter']
+
+for word in another_word:
+    print("----------")
+    print(bloom_filter.check(word))  # false
+    bloom_filter.add_to_filter(word)
+    print(bloom_filter.check(word))  # true
+    bloom_filter.delete_from_filter(word)
+    print(bloom_filter.check(word))  # false
+
