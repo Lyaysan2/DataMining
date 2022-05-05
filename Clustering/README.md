@@ -1,5 +1,5 @@
 # Clustering 
-###K-means Algorithms
+### K-means Algorithms
 
 I took a dataset of customers, where their gender, age, 
 how much they receive and how much they spend are indicated:
